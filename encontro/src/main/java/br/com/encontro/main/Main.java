@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Persistence.createEntityManagerFactory("smartcities").createEntityManager();
+		Persistence.createEntityManagerFactory("encontro").createEntityManager();
 
 	}
 
