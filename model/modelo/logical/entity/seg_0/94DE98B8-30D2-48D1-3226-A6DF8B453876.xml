@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A0E6A946-3038-8406-76F9-7CD0040318AE" name="tb_condominio">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="94DE98B8-30D2-48D1-3226-A6DF8B453876" name="tb_servico">
 <createdBy>lucca</createdBy>
-<createdTime>2022-02-09 00:43:37 UTC</createdTime>
+<createdTime>2022-02-09 13:47:58 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <engineerTo>
 <item key="8BD968B4-FE0E-FCE3-19F1-2BCFF0C32E1E" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_condominio" id="2B48BB35-F96F-8158-76F6-F1FF35410232">
+<Attribute name="id_servico" id="C0769F0D-DBB6-3641-BC5E-7731160D52A6">
 <createdBy>lucca</createdBy>
-<createdTime>2022-02-09 00:43:51 UTC</createdTime>
+<createdTime>2022-02-09 13:48:23 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <engineerTo>
 <item key="8BD968B4-FE0E-FCE3-19F1-2BCFF0C32E1E" value="true"/>
@@ -25,19 +25,9 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nm_condominio" id="354B9EBC-DBEB-8726-CF21-E29629AEC223">
+<Attribute name="nm_servico" id="1D8FA98F-4760-3408-F5B5-D10CC685D5CC">
 <createdBy>lucca</createdBy>
-<createdTime>2022-02-09 00:45:16 UTC</createdTime>
-<ownerDesignName>modelo</ownerDesignName>
-<engineerTo>
-<item key="8BD968B4-FE0E-FCE3-19F1-2BCFF0C32E1E" value="true"/>
-</engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="endereco" id="2B176F8A-E7A9-AD1F-FB03-D60DD5A78ACD">
-<createdBy>lucca</createdBy>
-<createdTime>2022-02-09 00:46:18 UTC</createdTime>
+<createdTime>2022-02-09 13:51:23 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <engineerTo>
 <item key="8BD968B4-FE0E-FCE3-19F1-2BCFF0C32E1E" value="true"/>
@@ -47,16 +37,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="961983D4-8D52-5AB5-F344-5DEAF6C5CAF7" name="tb_condominio PK">
+<identifier id="A4E2A113-BD9A-1DD2-0A0B-6818F4B5FADB" name="tb_servico PK">
 <createdBy>lucca</createdBy>
-<createdTime>2022-02-09 00:45:14 UTC</createdTime>
+<createdTime>2022-02-09 13:51:21 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <engineerTo>
 <item key="8BD968B4-FE0E-FCE3-19F1-2BCFF0C32E1E" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>2B48BB35-F96F-8158-76F6-F1FF35410232</attributeRef>
+<attributeRef>C0769F0D-DBB6-3641-BC5E-7731160D52A6</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
