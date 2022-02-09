@@ -10,6 +10,7 @@
 		<class>br.com.encontro.entity.Morador</class>
 		<class>br.com.encontro.entity.Prestador</class>
 		<class>br.com.encontro.entity.Servico</class>
+		<class>br.com.encontro.entity.Registro</class>
 		
 		<properties>
 			<property name="hibernate.show_sql" value="true" />
