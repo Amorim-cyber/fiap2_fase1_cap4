@@ -22,14 +22,14 @@ public class Morador {
 	private String nome;
 	
 	@Column(name="nr_morador",nullable=false)
-	private Long telefone;
+	private Long numero;
 	
 	public Morador() {
 	}
 
 	public Morador(String nome, Long telefone) {
 		this.nome = nome;
-		this.telefone = telefone;
+		this.numero = telefone;
 	}
 
 	public int getId() {
@@ -48,12 +48,12 @@ public class Morador {
 		this.nome = nome;
 	}
 
-	public Long getTelefone() {
-		return telefone;
+	public Long getNumero() {
+		return numero;
 	}
 
-	public void setTelefone(Long telefone) {
-		this.telefone = telefone;
+	public void setNumero(Long numero) {
+		this.numero = numero;
 	}
 	
 }
