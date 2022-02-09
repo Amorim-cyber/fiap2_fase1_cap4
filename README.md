@@ -76,7 +76,7 @@ Segue abaixo a representação gráfica do modelo relacional.
 </persistence>
 ````
 
-Feita a configuração inicial
+Feita a configuração inicial!
 
 <img src="assets/java1.PNG">
 
@@ -373,5 +373,85 @@ Feita a configuração inicial
    
    ````
 
-5. 
+   Após criada a classe incluir a seguinte linha em `persistence.xml`
+
+   ````xml
+   <class>br.com.encontro.entity.Servico</class>
+   ````
+
+    
+
+5. <b>Registro.java</b>
+
+   ````java
+   package br.com.encontro.entity;
+   
+   import java.util.Calendar;
+   
+   import javax.persistence.Column;
+   import javax.persistence.Entity;
+   import javax.persistence.GeneratedValue;
+   import javax.persistence.GenerationType;
+   import javax.persistence.Id;
+   import javax.persistence.SequenceGenerator;
+   import javax.persistence.Table;
+   
+   import org.hibernate.annotations.CreationTimestamp;
+   import org.hibernate.annotations.UpdateTimestamp;
+   
+   @Entity
+   @Table(name="tb_registro_servico")
+   public class Registro {
+   	
+   	@Id
+   	@SequenceGenerator(name="registro",sequenceName="sq_tb_registro",allocationSize=1)
+   	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="registro")
+   	@Column(name="id_registro")
+   	private int id;
+   
+   	@CreationTimestamp
+   	@Column(name="dt_data_cadastro")
+   	private Calendar dataCadastro;
+   	
+   	@UpdateTimestamp
+   	@Column(name="dt_data_modificacao")
+   	private Calendar dataModificacao;
+   
+   	public Calendar getDataCadastro() {
+   		return dataCadastro;
+   	}
+   
+   	public void setDataCadastro(Calendar dataCadastro) {
+   		this.dataCadastro = dataCadastro;
+   	}
+   
+   	public Calendar getDataModificacao() {
+   		return dataModificacao;
+   	}
+   
+   	public void setDataModificacao(Calendar dataModificacao) {
+   		this.dataModificacao = dataModificacao;
+   	}
+   	
+   	
+   	
+   }
+   
+   ````
+
+   Após criada a classe incluir a seguinte linha em `persistence.xml`
+
+   ````xml
+   <class>br.com.encontro.entity.Registro</class>
+   ````
+
+Pronto! Todas as entidades foram criadas com sucesso!
+
+ <img src="assets/java2.PNG">
+
+<hr>
+
+<h3>Realizando testes</h3>
+
+Agora vamos testar se o programa está criando nossas tabelas de forma correta. Contudo antes de tudo devemos criar a classe `Main.java` que vai apresentar o método main().
 
