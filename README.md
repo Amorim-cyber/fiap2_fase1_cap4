@@ -12,9 +12,11 @@ Segue abaixo a representação gráfica do modelo relacional.
 
 <img src="assets/tabelas.PNG">
 
-Conforme foi pedido vamos implementar a criação das tabelas entidades utilizando o `Hibernate` 
+Conforme foi pedido vamos realizar a criação das tabelas entidades utilizando o `Hibernate` 
 
 <h3>Setup</h3>
+
+Primeiramente temos que configurar nosso projeto, segue passo a passo:
 
 <ul>
     <li>Cria o arquivo maven java</li>
@@ -485,5 +487,7 @@ Conferindo no banco de dados Oracle, podemos notar a presença das novas tabelas
 <img src="assets/Testes2.GIF">
 
 
+
+<a href="https://github.com/Amorim-cyber/fiap2_fase1_cap4">CLIQUE AQUI PARA VISUALIZAR O PROJETO NO GITHUB</a>
 
 <B>FORTE ABRAÇO!</B>
