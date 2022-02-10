@@ -12,6 +12,8 @@ Segue abaixo a representação gráfica do modelo relacional.
 
 <img src="assets/tabelas.PNG">
 
+Conforme foi pedido vamos implementar a criação das tabelas entidades utilizando o `Hibernate` 
+
 <h3>Setup</h3>
 
 <ul>
@@ -455,3 +457,33 @@ Pronto! Todas as entidades foram criadas com sucesso!
 
 Agora vamos testar se o programa está criando nossas tabelas de forma correta. Contudo antes de tudo devemos criar a classe `Main.java` que vai apresentar o método main().
 
+````java
+package br.com.encontro.main;
+
+import javax.persistence.Persistence;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Persistence.createEntityManagerFactory("smartcities").createEntityManager();
+
+	}
+
+}
+
+````
+
+Vamos aos testes!
+
+<img src="assets/Testes.gif">
+
+Como pode ser visto acima as tabelas foram criadas com sucesso! Os erros mostrados foram de comandos `drops de tables, sequences e constraints `  que não encontraram os componentes (e com razão visto que as estruturas estão sendo criadas pela primeira vez).
+
+Conferindo no banco de dados Oracle, podemos notar a presença das novas tabelas.
+
+<img src="assets/Testes2.gif">
+
+
+
+<B>FORTE ABRAÇO!</B>
