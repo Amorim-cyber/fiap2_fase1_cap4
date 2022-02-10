@@ -476,13 +476,13 @@ public class Main {
 
 Vamos aos testes!
 
-<img src="assets/Testes.gif">
+<img src="assets/Testes.GIF">
 
 Como pode ser visto acima as tabelas foram criadas com sucesso! Os erros mostrados foram de comandos `drops de tables, sequences e constraints `  que não encontraram os componentes (e com razão visto que as estruturas estão sendo criadas pela primeira vez).
 
 Conferindo no banco de dados Oracle, podemos notar a presença das novas tabelas.
 
-<img src="assets/Testes2.gif">
+<img src="assets/Testes2.GIF">
 
 
 
