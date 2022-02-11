@@ -6,13 +6,13 @@ Para abstrair o conhecimento adquirido no capítulo 4 da Fase 1 desenvolvi o seg
 
 Temos moradores que ocupam um determinado condomínio. Estes podem está procurando serviços domésticos de diversos tipos (elétrico, hidráulico ou mecânico) e o prestador de serviço detém a capacitação. 
 
-A ideia é criar uma aplicação que facilite o encontro entre moradores e prestadores de serviço.
+A ideia é criar uma aplicação que facilite o encontro entre moradores e prestadores de serviço. E caso o morador deseje contratar o serviço haverá a criação de um registro entre as partes.
 
 Segue abaixo a representação gráfica do modelo relacional.
 
 <img src="assets/tabelas.PNG">
 
-Conforme foi pedido vamos realizar a criação das tabelas entidades utilizando o `Hibernate` 
+Conforme foi pedido na atividade vamos realizar a criação das tabelas entidades utilizando o `Hibernate` 
 
 <h3>Setup</h3>
 
