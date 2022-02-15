@@ -18,7 +18,7 @@ Segue abaixo a representação gráfica do modelo relacional.
 * <b>tb_condominio:</b> Um condomínio pode conter n moradores, assim como um morador pode ter posses em n condomínios. Tabela auxiliar `tb_condominio` serve para normalizar essa relação.
 * <b>tb_servico:</b> Tabela que vai armazenar dados do serviço. Contém o nome do serviço.
 * <b>tb_prestador:</b> Tabela que vai armazenar dados do prestador de serviço. Contém o nome, número de telefone do prestador.
-* <b>tb_registro_servico:</b> Tabela que vai armazenar dados do registro de serviço. Contém a data de inicio e a data de fim de serviço.
+* <b>tb_registro_servico:</b> Tabela que vai armazenar dados do registro de serviço. Contém a data de inicio, a data de fim de serviço e status do registro.
 * <b style="color:grey">Relação servico_registro:</b> Um tipo de serviço pode ser registrado, contudo um registro deve conter um tipo de serviço.
 * <b style="color:grey">Relação prestador_registro:</b> Um prestador de serviço pode ser registrado, contudo um registro deve conter um prestador de serviço.
 * <b style="color:grey">Relação morador_registro:</b> Um morador pode ser registrado, contudo um registro deve conter um morador.
@@ -398,6 +398,21 @@ Feita a configuração inicial!
 
 5. <b>Registro.java</b>
 
+   Antes de criar a classe, precisamos criar o enum `Estado.java`
+   
+   ````java
+   package br.com.encontro.entity;
+   
+   public enum Estado {
+   	
+   	ABERTO, FECHADO
+   
+   }
+   
+   ````
+   
+   Após criado o enum, iniciamos a criação da classe
+   
    ````java
    package br.com.encontro.entity;
    
@@ -405,6 +420,8 @@ Feita a configuração inicial!
    
    import javax.persistence.Column;
    import javax.persistence.Entity;
+   import javax.persistence.EnumType;
+   import javax.persistence.Enumerated;
    import javax.persistence.GeneratedValue;
    import javax.persistence.GenerationType;
    import javax.persistence.Id;
@@ -423,6 +440,10 @@ Feita a configuração inicial!
    	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="registro")
    	@Column(name="id_registro")
    	private int id;
+   	
+   	@Enumerated(EnumType.STRING)
+   	@Column(name="status")
+   	private Estado tipo;
    
    	@CreationTimestamp
    	@Column(name="dt_data_cadastro")
@@ -453,9 +474,9 @@ Feita a configuração inicial!
    }
    
    ````
-
+   
    Após criada a classe incluir a seguinte linha em `persistence.xml`
-
+   
    ````xml
    <class>br.com.encontro.entity.Registro</class>
    ````
