@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FF2E97FF-1B47-332C-22D1-B61D9CDDE374" name="tb_registro_condominio">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FF2E97FF-1B47-332C-22D1-B61D9CDDE374" name="tb_registro_morada">
 <createdBy>lucca</createdBy>
 <createdTime>2022-02-14 13:15:35 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
@@ -15,18 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_condominio" id="D45734F9-D6FA-954C-B33F-DEA88CFED98E">
-<createdBy>lucca</createdBy>
-<createdTime>2022-02-14 13:16:20 UTC</createdTime>
-<generatorID>82E6009E-0D83-4925-87C2-97E22952CD1E</generatorID>
-<ownerDesignName>modelo</ownerDesignName>
-<engineerTo>
-<item key="8BD968B4-FE0E-FCE3-19F1-2BCFF0C32E1E" value="true"/>
-</engineerTo>
-<referedAttribute>2B48BB35-F96F-8158-76F6-F1FF35410232</referedAttribute>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="id_morador" id="062B3854-816D-350E-C464-304598250B9B">
 <createdBy>lucca</createdBy>
 <createdTime>2022-02-14 13:16:38 UTC</createdTime>
@@ -36,6 +24,18 @@
 <item key="8BD968B4-FE0E-FCE3-19F1-2BCFF0C32E1E" value="true"/>
 </engineerTo>
 <referedAttribute>418DBA8A-9DC3-EDDE-84D2-B71C76A58C71</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_morada" id="2B5D5730-75A2-9173-B359-801B52D1AC28">
+<createdBy>lucca</createdBy>
+<createdTime>2022-02-16 17:47:16 UTC</createdTime>
+<generatorID>6D7F356A-3925-E9EC-81EB-60F8E02B6460</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="8BD968B4-FE0E-FCE3-19F1-2BCFF0C32E1E" value="true"/>
+</engineerTo>
+<referedAttribute>997D18F1-22D9-9A5F-5218-28E5DDEEE14C</referedAttribute>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
