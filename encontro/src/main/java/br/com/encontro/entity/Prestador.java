@@ -22,12 +22,13 @@ public class Prestador {
 	private String nome;
 	
 	@Column(name="nr_morador",nullable=false)
-	private Long telefone;
+	private int telefone;
 	
 	public Prestador() {
 	}
 
-	public Prestador(String nome, Long telefone) {
+	public Prestador(int id,String nome, int telefone) {
+		this.id = id;
 		this.nome = nome;
 		this.telefone = telefone;
 	}
@@ -48,11 +49,11 @@ public class Prestador {
 		this.nome = nome;
 	}
 
-	public Long getTelefone() {
+	public int getTelefone() {
 		return telefone;
 	}
 
-	public void setTelefone(Long telefone) {
+	public void setTelefone(int telefone) {
 		this.telefone = telefone;
 	}
 	
