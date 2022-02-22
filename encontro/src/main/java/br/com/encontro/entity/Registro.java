@@ -36,6 +36,14 @@ public class Registro {
 	@UpdateTimestamp
 	@Column(name="dt_data_modificacao")
 	private Calendar dataModificacao;
+	
+	public Registro() {
+	}
+
+	public Registro(int id, Estado tipo) {
+		this.id = id;
+		this.tipo = tipo;
+	}
 
 	public Calendar getDataCadastro() {
 		return dataCadastro;
@@ -55,4 +63,10 @@ public class Registro {
 	
 	
 	
+}
+
+enum Estado {
+	
+	ABERTO, FECHADO
+
 }
